@@ -1,0 +1,25 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class gui extends JFrame {
+
+    // panel1
+    public gui() {
+        Container container = getContentPane();
+        container.setLayout(new BorderLayout());
+
+        JPanel p1 = new JPanel();
+        p1.setLayout(new BorderLayout());
+        JLabel total = new JLabel("ksoong");
+        p1.add(total);
+        container.add(p1, BorderLayout.CENTER);
+    }
+     public static void main(String[] args) {
+        gui frame = new gui();
+        frame.setTitle("kosong");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(600, 400);
+        frame.setVisible(true);
+    }
+}
